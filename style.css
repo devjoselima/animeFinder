@@ -1,0 +1,94 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;   
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    background-color: #1F2937;
+    color: #fff;   
+}
+
+input{
+    height: 35px;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    margin: 0 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    border: none;
+    background: none;
+    color: #fff; 
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.animes-container{
+    display: grid;
+    margin: 15px auto;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  
+  .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border: 4px solid #333;
+    border-top-color: #f00;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+
+.anime{
+    text-align: center;
+    margin: 15px 0;
+}
+.anime img{
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.anime img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+ 
+@media screen and (max-width: 660px){
+    header{
+      flex-direction: column;
+      height: 120px;
+    }
+  
+    
+  
+  }
