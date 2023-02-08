@@ -28,11 +28,12 @@ async function searchAnime(){
     return false;
 }
 
-searchInput.addEventListener("click", () => searchAnime());
-searchButton.addEventListener("click", () => searchAnime());
 
+searchButton.addEventListener("click", () => searchAnime());
 searchInput.addEventListener("keydown", (e) => {
     if(e.key === "Enter"){
         searchAnime()
     }
 });
+
+
