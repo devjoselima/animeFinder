@@ -1,6 +1,5 @@
 const searchInput = document.querySelector('#pesquisar');
 const searchButton = document.querySelector('#button-search');
-const loading = document.querySelector(".loading");
 
 async function searchAnime(){
 
@@ -16,7 +15,6 @@ async function searchAnime(){
     for(const anime of data.data){
         const banner =  anime.attributes.posterImage.small;
         const title = anime.attributes.titles.en || anime.attributes.titles.ja_jp;
-        // const descricao = anime.attributes.synopsis
 
         containerAnimes.innerHTML +=  `
         <div class="anime">

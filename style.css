@@ -28,6 +28,8 @@ input{
     border: none;
     margin: 0 5px;
     background-color: #3B3B3B;
+    color: #fff;
+    font-size: 1.025rem;
 }
 
 input:focus{
@@ -66,6 +68,63 @@ button{
     cursor: pointer;
     transform: scale(1.02);
 }
+
+
+.background-anime{
+    width: 100%;
+    height: 30vh;
+    opacity: 30%;
+}
+
+.container-anime{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: #fff;
+}
+
+.banner-anime{
+    position: relative;
+    bottom: 150px;
+    left: 170px;
+}
+
+.container-description{
+    max-width: 70%;
+}
+
+.container-description h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-description h2{
+    font-size:1.8rem;
+    margin: 1.5rem 0 0.6rem 0;
+}
+
+li{
+    list-style: none;
+    display: inline;   
+    background-color: #3B3B3B;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+}
+
+.description{
+    font-size: 1,125rem;
+    line-height: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
  
 @media screen and (max-width: 660px){
     header{
