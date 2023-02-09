@@ -3,7 +3,7 @@ const searchButton = document.querySelector('#button-search');
 
 async function searchAnime(){
 
-    const search = document.getElementById('pesquisar').value;
+    const search = searchInput.value;
     
     const response = await fetch(`https://kitsu.io/api/edge/anime?filter[text]=${search}`);
     const data = await response.json();
@@ -35,5 +35,4 @@ searchInput.addEventListener("keydown", (e) => {
         searchAnime()
     }
 });
-
 
